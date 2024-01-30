@@ -310,11 +310,6 @@ public class StudentCourseRegistrationSystem {
         courseDatabase.addCourse(new Course("CS103", "Algorithms", "Introduction to Algorithms", 20, "MWF 1:00 PM"));
         courseDatabase.addCourse(new Course("CS104", "Database Systems", "Introduction to Database Management", 25, "TTH 10:00 AM"));
         courseDatabase.addCourse(new Course("CS105", "Web Development", "Introduction to Web Development", 30, "MWF 3:00 PM"));
-        courseDatabase.addCourse(new Course("CS106", "Artificial Intelligence", "Introduction to AI", 20, "TTH 3:00 PM"));
-        courseDatabase.addCourse(new Course("CS107", "Computer Networks", "Introduction to Networking", 25, "MWF 10:00 AM"));
-        courseDatabase.addCourse(new Course("CS108", "Operating Systems", "Introduction to Operating Systems", 20, "TTH 1:00 PM"));
-        courseDatabase.addCourse(new Course("CS109", "Computer Graphics", "Introduction to Computer Graphics", 30, "MWF 2:00 PM"));
-        courseDatabase.addCourse(new Course("CS110", "Software Engineering", "Introduction to Software Engineering", 25, "TTH 9:00 AM"));
 
         StudentDatabase studentDatabase = new StudentDatabase();
         studentDatabase.addStudent(new Student("1001", "John Doe"));
@@ -325,18 +320,6 @@ public class StudentCourseRegistrationSystem {
         studentDatabase.addStudent(new Student("1006", "Olivia Taylor"));
         studentDatabase.addStudent(new Student("1007", "William Anderson"));
         studentDatabase.addStudent(new Student("1008", "Emma Thomas"));
-        studentDatabase.addStudent(new Student("1009", "Joseph Jackson"));
-        studentDatabase.addStudent(new Student("1010", "Ava White"));
-        studentDatabase.addStudent(new Student("1011", "Alexander Harris"));
-        studentDatabase.addStudent(new Student("1012", "Sophia Martin"));
-        studentDatabase.addStudent(new Student("1013", "Daniel Thompson"));
-        studentDatabase.addStudent(new Student("1014", "Isabella Garcia"));
-        studentDatabase.addStudent(new Student("1015", "Matthew Martinez"));
-        studentDatabase.addStudent(new Student("1016", "Charlotte Robinson"));
-        studentDatabase.addStudent(new Student("1017", "Samuel Clark"));
-        studentDatabase.addStudent(new Student("1018", "Oliver Rodriguez"));
-        studentDatabase.addStudent(new Student("1019", "Lucas Lewis"));
-        studentDatabase.addStudent(new Student("1020", "Amelia Lee"));
         
 
 
