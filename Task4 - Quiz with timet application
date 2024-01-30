@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class QuizApp {
+    private static final String[] questions = {
+            "What is the capital city of India?",
+            "What is the largest planet in the solar system?",
+            "Who discovered India?"
+    };
+
+    private static final String[][] options = {
+            {"A. Mumbai", "B. New Delhi", "C. Kerala", "D. Tamil nadu"},
+            {"A. Jupiter", "B. Mars", "C. Saturn", "D. Earth"},
+            {"A. Newton", "B. Christopher Columbus", "C. Vasco da Gama", "D. Willem Janszoon"}
+    };
+
+    private static final int[] answers = {1, 0, 2};    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int score = 0;
+
+        for (int i = 0; i < questions.length; i++) {
+            System.out.println("Question " + (i + 1) + ": " + questions[i]);
+            for (String option : options[i]) {
+                System.out.println(option);
+            }
+
+            System.out.print("Your answer (enter the option letter): ");
+            String userAnswer = scanner.next().toUpperCase();
+
+            if (userAnswer.charAt(0) - 'A' == answers[i]) {
+                System.out.println("Correct!");
+                score++;
+            } else {
+                System.out.println("Incorrect! The correct answer is: " + options[i][answers[i]]);
+            }
+        }
+
+        System.out.println("Quiz completed. Your score is: " + score + "/" + questions.length);
+
+        scanner.close();
+    }
+}
